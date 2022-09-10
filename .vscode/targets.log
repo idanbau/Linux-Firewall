@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Aug 26 23:02:24 2022
+# Make data base, printed on Sun Sep 11 00:31:33 2022
 
 # Variables
 
@@ -33,7 +33,7 @@ QT_ACCESSIBILITY = 1
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/105/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/106/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -49,11 +49,11 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/idan/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /home/idan/.config/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.BUYQR1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.SKMVR1
 # default
 .LOADED := 
 # default
@@ -63,14 +63,13 @@ MAKEFLAGS = pqrR
 # makefile
 CURDIR := /home/idan/Documents/projects/Linux-Firewall
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
 MFLAGS = -pqrR
- 
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # default
@@ -90,7 +89,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6276
+VSCODE_PID = 3044
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -98,7 +97,7 @@ XDG_SESSION_TYPE = wayland
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/idan-virtual-machine:@/tmp/.ICE-unix/1739,unix/idan-virtual-machine:/tmp/.ICE-unix/1739
+SESSION_MANAGER = local/idan-virtual-machine:@/tmp/.ICE-unix/1774,unix/idan-virtual-machine:/tmp/.ICE-unix/1774
 # automatic
 *F = $(notdir $*)
 # environment
@@ -139,16 +138,14 @@ MAKEFILES :=
 LANGUAGE = en_IL:en
 # automatic
 ^F = $(notdir $^)
- 
 # environment
 SNAP_USER_COMMON = /home/idan/snap/code/common
 # environment
- 
-SNAP = /snap/code/105
+SNAP = /snap/code/106
 # environment
-INVOCATION_ID = 5b1fb634096a4d13a8a6e4be7aceaaf6
+INVOCATION_ID = 41d6167995cc437e8fd1be3baf33733b
 # environment
-SNAP_REVISION = 105
+SNAP_REVISION = 106
 # environment
 SNAP_REAL_HOME = /home/idan
 # environment
@@ -180,7 +177,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 1785
+SYSTEMD_EXEC_PID = 1819
 # environment
 DISPLAY = :0
 # environment
@@ -190,25 +187,23 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-DISABLE_WAYLAND = 1
-# environment
-SNAP_DATA = /var/snap/code/105
+SNAP_DATA = /var/snap/code/106
 # environment
 SNAP_CONTEXT = qySMYncRxefI5MPUqFkqfKB7xNNB_D1rpXhHkeyfXYeiRRHzXNA9
 # environment
-MANAGERPID = 1582
+MANAGERPID = 1631
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 6236
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3006
 # environment
-_ = /snap/code/105/usr/share/code/code
+_ = /snap/code/106/usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 1)
-obj-m = main.o
+obj-m = ping_blocker.o
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/idan/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:41454
+JOURNAL_STREAM = 8:45111
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -220,11 +215,11 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-aa1ed167-1.70.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-aa1ed167-1.71.0-main.sock
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/105/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/106/usr/share/glib-2.0/schemas
 # environment
 IM_CONFIG_PHASE = 1
 # default
@@ -232,7 +227,7 @@ IM_CONFIG_PHASE = 1
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = e4503b30
+SNAP_VERSION = 784b0177
 # default
 SUFFIXES := 
 # environment
@@ -244,16 +239,15 @@ SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-SNAP_USER_DATA = /home/idan/snap/code/105
+SNAP_USER_DATA = /home/idan/snap/code/106
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
 GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
- 
 # variable set hash-table stats:
-# Load=119/1024=12%, Rehash=0, Collisions=3/157=2%
+# Load=118/1024=12%, Rehash=0, Collisions=3/156=2%
 
 # Pattern-specific Variable Values
 
@@ -261,9 +255,9 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2051, inode 434588): 10 files, no impossibilities.
+# . (device 2051, inode 434588): 22 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -274,7 +268,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-26 22:59:47.152294913
+#  Last modified 2022-09-11 00:31:22.998898255
 #  File has been updated.
 #  Successfully updated.
 
@@ -285,6 +279,7 @@ clean:
 #  recipe to execute (from 'Makefile', line 7):
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 
+ 
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
@@ -335,12 +330,12 @@ all:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 134 B / avg = 8 B
-# current buf: size = 8162 B / used = 134 B / count = 16 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 373 B / avg = 13 B
+# current buf: size = 8162 B / used = 373 B / count = 28 / avg = 13 B
 
-# strcache performance: lookups = 24 / hit rate = 33%
+# strcache performance: lookups = 36 / hit rate = 22%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=0/24=0%
-# Finished Make data base on Fri Aug 26 23:02:24 2022
+# Load=28/8192=0%, Rehash=0, Collisions=0/36=0%
+# Finished Make data base on Sun Sep 11 00:31:33 2022
 
  
