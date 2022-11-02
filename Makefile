@@ -1,7 +1,6 @@
-obj-m += ping_blocker.o
-
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
-
+	cd kernel && make
+	cd user && make
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	cd kernel && make clean
+	cd user && make clean

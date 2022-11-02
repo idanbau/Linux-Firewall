@@ -4,6 +4,7 @@
 #include <linux/netfilter.h>
 #include <linux/netfilter_ipv4.h>
 #include <linux/ip.h>
+#include <linux/tcp.h>
 #include "../../shared/configuration.h"
 
 static unsigned int callback_blocker(void *,
@@ -20,15 +21,28 @@ static unsigned int callback_blocker(void *,
                           struct sk_buff *skb,
                           const struct nf_hook_state *)
 {
-    struct iphdr *iph;   // IP heade
+    struct iphdr *iph;   // IP header
+    struct tcphdr* tcp_h;
     if(skb == NULL){
         return NF_ACCEPT;
     }
     iph = ip_hdr(skb);
-    if(iph->saddr)
+    if(iph == NULL){
+        return NF_ACCEPT;
+    }
+    if(iph->saddr == config.ip_addr){
         printk(KERN_INFO "current ip address is %u\n", iph->saddr);
-    if(iph->saddr == config.ip_addr)
-        return NF_DROP;
+        if(iph->protocol == IPPROTO_TCP){
+            tcp_h = tcp_hdr(skb);
+            if(tcp_h == NULL){
+                return NF_ACCEPT;
+            }
+            printk(KERN_INFO "tcp dest port: %d tcp src port: %d\n", cpu_to_be16(tcp_h->dest));
+            if(cpu_to_be16(tcp_h->dest) == config._port){
+                return NF_DROP;
+            }
+        }
+    }
     return NF_ACCEPT;
 }
 
@@ -48,9 +62,10 @@ int network_init(void){
     return result;
 }
 
-void setBlock(unsigned int block_ip_addr){
-    config.ip_addr = block_ip_addr;
-    printk(KERN_INFO "Added ip address as fellow %u\n", block_ip_addr);
+void setBlock(const Configuration* block_config){
+    config.ip_addr = block_config->ip_addr;
+    config._outgoing = block_config->_outgoing;
+    config._port = block_config->_port;
 }
 
 void network_exit(void){

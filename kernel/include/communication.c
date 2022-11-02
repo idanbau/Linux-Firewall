@@ -62,7 +62,7 @@ static long my_ioctl (struct file *file, unsigned int cmd, unsigned long arg)
             return -EFAULT;
         }
         /* process data and execute command */
-        setBlock(config.ip_addr);
+        setBlock(&config);
         break;
     default:
         printk(KERN_INFO "case default failed to reciveve from user\n");
